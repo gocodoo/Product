@@ -14,7 +14,8 @@ class CategoriesTable
     {
         return $table
             ->columns([
-                TextColumn::make('name'),
+                TextColumn::make('name')
+                        ->searchable(),
                 TextColumn::make('decription')
             ])
             ->filters([
